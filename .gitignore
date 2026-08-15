@@ -1,0 +1,10 @@
+# Keep local project files off the public repo, while leaving the repo structure usable on this machine.
+README.md
+custom-linux-distro-prd.md
+/docs/security-hardening.md
+distro/system/security/security-baseline.md
+distro/desktop/hyprland.md
+distro/build/release-pipeline.md
+output/
+.build-tmp/
+*.log

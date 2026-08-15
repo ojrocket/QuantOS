@@ -1,6 +1,6 @@
 # QuantOS
 
-QuantOS is a Fedora-based Linux desktop distribution designed around the requirements in `custom-linux-distro-prd.md`.
+QuantOS is a Fedora-based Linux desktop distribution designed around the requirements in 
 
 ## Real build workflow
 
