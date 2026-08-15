@@ -1,0 +1,29 @@
+* {
+  font-family: "CaskaydiaCove Nerd Font", "Inter", sans-serif;
+  font-size: 12px;
+  border: none;
+  border-radius: 14px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: rgba(11, 16, 32, 0.75);
+  color: #e5edf7;
+  border-bottom: 1px solid rgba(142, 202, 230, 0.25);
+}
+
+#workspaces button {
+  padding: 0 10px;
+  color: #94a3b8;
+  background: transparent;
+}
+
+#workspaces button.active {
+  color: #8ecae6;
+  background: rgba(142, 202, 230, 0.12);
+}
+
+#cpu, #memory, #temperature, #network, #wireplumber, #battery, #clock {
+  padding: 0 10px;
+  background: rgba(255, 255, 255, 0.04);
+}

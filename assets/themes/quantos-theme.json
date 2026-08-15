@@ -1,0 +1,26 @@
+{
+  "name": "QuantOS",
+  "description": "A polished, dark-mode desktop theme aligned with the PRD and the caelestia visual language.",
+  "colors": {
+    "base": "#0b1020",
+    "surface": "#111827",
+    "surface_alt": "#1f2937",
+    "primary": "#8ecae6",
+    "secondary": "#219ebc",
+    "accent": "#a78bfa",
+    "text": "#e5edf7",
+    "muted": "#94a3b8",
+    "success": "#34d399",
+    "warning": "#fbbf24",
+    "danger": "#f87171"
+  },
+  "rounding": {
+    "small": 10,
+    "medium": 16,
+    "large": 22
+  },
+  "fonts": {
+    "ui": "CaskaydiaCove Nerd Font",
+    "monospace": "CaskaydiaCove Nerd Font"
+  }
+}

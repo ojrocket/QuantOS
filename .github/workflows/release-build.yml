@@ -1,0 +1,34 @@
+name: QuantOS release build
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: fedora:40
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Install build dependencies
+        run: |
+          dnf -y install git sudo make bash livecd-tools lorax pykickstart rsync genisoimage
+
+      - name: Validate repo security baseline
+        run: |
+          python3 scripts/verify_security_defaults.py
+
+      - name: Dry-run ISO build
+        run: |
+          bash build/build-iso.sh --dry-run --output-dir ./output --arch x86_64
+
+      - name: Upload build metadata
+        uses: actions/upload-artifact@v4
+        with:
+          name: quantos-release-metadata
+          path: |
+            output/
+            build/
