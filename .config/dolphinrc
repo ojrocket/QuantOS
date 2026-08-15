@@ -1,0 +1,19 @@
+[General]
+ShowFullPath=true
+ShowCopyMoveMenu=true
+DetailsViewIconSize=16
+
+[MainWindow]
+Splitter=350, 690
+
+[View]
+ViewMode=Icons
+SortOrder=Name
+SortDirectoriesFirst=true
+PreviewMode=0
+
+[PlacesPanel]
+IconSize=16
+
+[RecentlyUsed]
+Items=10

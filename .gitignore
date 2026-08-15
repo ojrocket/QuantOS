@@ -1,10 +1,15 @@
-# Keep local project files off the public repo, while leaving the repo structure usable on this machine.
-README.md
-custom-linux-distro-prd.md
-/docs/security-hardening.md
-distro/system/security/security-baseline.md
-distro/desktop/hyprland.md
-distro/build/release-pipeline.md
+# Local-only artifacts and private data
 output/
 .build-tmp/
+*.iso
+*.img
 *.log
+.private/
+.local/
+.env
+*.pem
+*.key
+
+# Local build caches
+__pycache__/
+*.pyc
